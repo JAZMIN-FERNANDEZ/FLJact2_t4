@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Resultado</title></head>
+<body>
+    <h1>Datos recibidos</h1>
+    <ul>
+        <li>ID: <span th:text="${producto.id}"></span></li>
+        <li>Nombre: <span th:text="${producto.nombre}"></span></li>
+        <li>Precio: <span th:text="${producto.precio}"></span></li>
+        <li>Categoría: <span th:text="${producto.categoria}"></span></li>
+    </ul>
+    <p>Autor: <span th:text="${usuario}"></span></p>
+    <a th:href="@{/productos}">Volver</a>
+</body>
+</html>
